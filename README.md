@@ -4,8 +4,11 @@
 
 
 
-█░█░█ █▀█ █▀█ █▀▄ █▀▀ █▀█ █░░ █▀█ █▄█
-▀▄▀▄▀ █▄█ █▄█ █▄▀ ██▄ █▀▀ █▄▄ █▄█ ░█░
+
+████████████████████████████████████████████████████████
+█▄─█▀▀▀█─▄█─▄▄─█─▄▄─█▄─▄▄▀█▄─▄▄─█▄─▄▄─█▄─▄███─▄▄─█▄─█─▄█
+██─█─█─█─██─██─█─██─██─██─██─▄█▀██─▄▄▄██─██▀█─██─██▄─▄██
+▀▀▄▄▄▀▄▄▄▀▀▄▄▄▄▀▄▄▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀▄▄▄▀▀▀▄▄▄▄▄▀▄▄▄▄▀▀▄▄▄▀▀
 
 ### Description
 This project deploys a WordPress environment with integrated WooCommerce, ready to use with pre-imported product data and initialized database.
