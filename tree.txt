@@ -1,0 +1,48 @@
+
+ .
+    └── README.md
+    └── common
+    │   └── initial-db.sql
+    │   └── wp-init.php
+    └── data
+    │   └── product-images
+    │       └── 2013
+    │       │   └── 06
+    │       │       └── Poster_1_flat-100x100.jpg
+    │       │       └── Poster_1_flat-150x150.jpg
+    │       │       └── Poster_1_flat-300x300.jpg
+    │       │       └── Poster_1_flat-324x324.jpg
+    │       │       └── Poster_1_flat-416x416.jpg
+    │       │       └── [...]
+    │       └── 2019
+    │       │   └── 01
+    │       │   │   └── album-1-1-100x100.jpg
+    │       │   │   └── album-1-1-150x150.jpg
+    │       │   │   └── album-1-1-300x300.jpg
+    │       │   │   └── album-1-1-324x324.jpg
+    │       │   │   └── album-1-1-416x416.jpg
+    │       │   │   └── [...]
+    │       │   └── 05
+    │       │       └── accessories-100x100.jpg
+    │       │       └── accessories-150x150.jpg
+    │       │       └── accessories-300x300.jpg
+    │       │       └── accessories-324x324.jpg
+    │       │       └── accessories-416x416.jpg
+    │       │       └── [...]
+    │       └── luma-foam-roller.jpg
+    │       └── luma-stability-ball-gray.jpg
+    │       └── luma-stability-ball-pink.jpg
+    │       └── [...]
+    └── docker_deployment
+    │   └── deploy.sh
+    │   └── docker-compose.yml
+    │   └── provision.sh
+    └── local_deployment
+    │   └── configure_apache_php.sh
+    │   └── configure_mysql.sh
+    │   └── configure_wordpress.sh
+    │   └── install_dependencies.sh
+    │   └── install_wordpress.sh
+    │   └── main.sh
+    └── tree.txt
+    └── visual_tree.sh

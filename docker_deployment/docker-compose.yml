@@ -1,11 +1,9 @@
-version: '3.8'
-
 services:
   db:
     image: mariadb:10.5
     volumes:
       - db_data:/var/lib/mysql
-      - ./initial-db.sql:/docker-entrypoint-initdb.d/initial-db.sql
+      - ../common/initial-db.sql:/docker-entrypoint-initdb.d/initial-db.sql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -15,6 +13,8 @@ services:
     container_name: mariadb_container
 
   wordpress:
+    env_file:
+      -../common/.env
     depends_on:
       - db
     image: wordpress:latest
@@ -28,8 +28,9 @@ services:
       WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
     volumes:
       - wordpress_data:/var/www/html
-      - ./data/product-images:/var/www/html/wp-content/uploads
-      - ./data/sample-products.csv:/var/www/html/wp-content/uploads/sample-products.csv
+      - ../common/wp-init.php:/var/www/html/wp-init.php
+      - ../data/product-images:/var/www/html/wp-content/uploads
+      - ../data/sample-products.csv:/var/www/html/wp-content/uploads/sample-products.csv
     container_name: wordpress_container
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:80/wp-admin/install.php"]
